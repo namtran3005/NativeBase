@@ -184,7 +184,7 @@ _composeScenes:function _composeScenes(){var _this4=this;
 return this._children().map(function(child,idx){
 var key=_this4._makeSceneKey(child,idx);
 return(
-React.createElement(SceneComponent,{
+React.createElement(View,{
 key:child.key,
 shouldUpdated:_this4._shouldRenderSceneKey(idx,_this4.state.currentPage),
 style:{width:_this4.state.containerWidth},__source:{fileName:_jsxFileName,lineNumber:187}},
