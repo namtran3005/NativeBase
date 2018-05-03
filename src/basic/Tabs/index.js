@@ -184,7 +184,7 @@ const ScrollableTabView = createReactClass({
     return this._children().map((child, idx) => {
       let key = this._makeSceneKey(child, idx);
       return (
-        <SceneComponent
+        <View
           key={child.key}
           shouldUpdated={this._shouldRenderSceneKey(idx, this.state.currentPage)}
           style={{ width: this.state.containerWidth }}
@@ -194,7 +194,7 @@ const ScrollableTabView = createReactClass({
           ) : (
             <View heading={child.props.heading} />
           )}
-        </SceneComponent>
+        </View>
       );
     });
   },
